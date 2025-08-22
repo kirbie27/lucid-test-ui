@@ -1,16 +1,20 @@
 {
   "name": "lucid-web-component-library",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "dev": "tsup src/index.tsx --watch --dts"
   },
-  "keywords": [],
-  "author": "Lucid IT Solutions",
-  "license": "ISC",
-  "description": "",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/cli": "^4.1.12",
@@ -18,8 +22,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.540.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
     "tailwind-merge": "^3.3.1",
     "tw-animate-css": "^1.3.7"
   },
