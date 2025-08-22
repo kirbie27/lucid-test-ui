@@ -15,4 +15,4 @@ interface LucidButtonProps extends React.ComponentProps<typeof Button> {
 }
 declare const LucidButton: React.ForwardRefExoticComponent<Omit<LucidButtonProps, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 
-export { LucidButton, type LucidButtonProps };
+export { LucidButton };

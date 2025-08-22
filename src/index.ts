@@ -1,3 +1,3 @@
 import "./index.css";
 
-export * from "./components/customui/lucid-button";
+export { LucidButton } from "./components/customui/lucid-button";
