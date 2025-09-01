@@ -1889,25 +1889,27 @@ Button2.displayName = "Button";
 
 // src/components/shad/lucid-button.tsx
 import { jsxs as jsxs32 } from "react/jsx-runtime";
-var LucidButton = React19.forwardRef(({ className, children, ...props }, ref) => {
-  return /* @__PURE__ */ jsxs32(
-    Button2,
-    {
-      ref,
-      variant: "ghost",
-      className: cn(
-        "bg-pink-100 text-pink-700 hover:bg-pink-200 hover:text-pink-900 font-bold rounded-xl",
-        className
-      ),
-      ...props,
-      children: [
-        "Lucid ",
-        children
-      ]
-    }
-  );
-});
-LucidButton.displayName = "LucidButton";
+var LucidButton = React19.forwardRef(
+  ({ className, children, ...props }, ref) => {
+    return /* @__PURE__ */ jsxs32(
+      Button2,
+      {
+        ref,
+        variant: "ghost",
+        className: cn(
+          "bg-pink-100 text-pink-700 hover:bg-pink-200 hover:text-pink-900 font-bold rounded-xl",
+          className
+        ),
+        ...props,
+        children: [
+          "Lucid ",
+          children
+        ]
+      }
+    );
+  }
+);
+var lucid_button_default = LucidButton;
 export {
   Button_default as Button,
   ButtonContainer_default as ButtonContainer,
@@ -1918,6 +1920,7 @@ export {
   Divider,
   FieldSetInput_default as FieldSetInput,
   FieldSetTextArea_default as FieldSetTextArea,
+  FieldSet_TextArea_default as FieldSetTextAreaCN,
   FilterToggle_default as FilterToggle,
   FlexFieldRow_default as FlexFieldRow,
   FlexFieldRowWrap_default as FlexFieldRowWrap,
@@ -1937,7 +1940,7 @@ export {
   LeftSideUpPart,
   ListMakerComponent_default as ListMakerComponent,
   LoadingOverlay_default as LoadingOverlay,
-  LucidButton,
+  lucid_button_default as LucidButton,
   MatrixInput_default as MatrixInput,
   Modal_default as Modal,
   ModalDivider_default as ModalDivider,
@@ -1948,7 +1951,6 @@ export {
   FieldSet_Input_default as ShadFieldSetInput,
   FieldSet_Input_Gray_default as ShadFieldSetInputGray,
   FieldSet_MatrixInput_default as ShadFieldSetMatrixInput,
-  FieldSet_TextArea_default as ShadFieldSetTextArea,
   FieldSet_Toggle_default as ShadFieldSetToggle,
   FlexField_default as ShadFlexField,
   FlexFieldRow2_default as ShadFlexFieldRow2,

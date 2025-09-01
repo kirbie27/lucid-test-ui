@@ -39,6 +39,7 @@ __export(index_exports, {
   Divider: () => Divider,
   FieldSetInput: () => FieldSetInput_default,
   FieldSetTextArea: () => FieldSetTextArea_default,
+  FieldSetTextAreaCN: () => FieldSet_TextArea_default,
   FilterToggle: () => FilterToggle_default,
   FlexFieldRow: () => FlexFieldRow_default,
   FlexFieldRowWrap: () => FlexFieldRowWrap_default,
@@ -58,7 +59,7 @@ __export(index_exports, {
   LeftSideUpPart: () => LeftSideUpPart,
   ListMakerComponent: () => ListMakerComponent_default,
   LoadingOverlay: () => LoadingOverlay_default,
-  LucidButton: () => LucidButton,
+  LucidButton: () => lucid_button_default,
   MatrixInput: () => MatrixInput_default,
   Modal: () => Modal_default,
   ModalDivider: () => ModalDivider_default,
@@ -69,7 +70,6 @@ __export(index_exports, {
   ShadFieldSetInput: () => FieldSet_Input_default,
   ShadFieldSetInputGray: () => FieldSet_Input_Gray_default,
   ShadFieldSetMatrixInput: () => FieldSet_MatrixInput_default,
-  ShadFieldSetTextArea: () => FieldSet_TextArea_default,
   ShadFieldSetToggle: () => FieldSet_Toggle_default,
   ShadFlexField: () => FlexField_default,
   ShadFlexFieldRow2: () => FlexFieldRow2_default,
@@ -1961,25 +1961,27 @@ Button2.displayName = "Button";
 
 // src/components/shad/lucid-button.tsx
 var import_jsx_runtime52 = require("react/jsx-runtime");
-var LucidButton = React19.forwardRef(({ className, children, ...props }, ref) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(
-    Button2,
-    {
-      ref,
-      variant: "ghost",
-      className: cn(
-        "bg-pink-100 text-pink-700 hover:bg-pink-200 hover:text-pink-900 font-bold rounded-xl",
-        className
-      ),
-      ...props,
-      children: [
-        "Lucid ",
-        children
-      ]
-    }
-  );
-});
-LucidButton.displayName = "LucidButton";
+var LucidButton = React19.forwardRef(
+  ({ className, children, ...props }, ref) => {
+    return /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(
+      Button2,
+      {
+        ref,
+        variant: "ghost",
+        className: cn(
+          "bg-pink-100 text-pink-700 hover:bg-pink-200 hover:text-pink-900 font-bold rounded-xl",
+          className
+        ),
+        ...props,
+        children: [
+          "Lucid ",
+          children
+        ]
+      }
+    );
+  }
+);
+var lucid_button_default = LucidButton;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button,
@@ -1991,6 +1993,7 @@ LucidButton.displayName = "LucidButton";
   Divider,
   FieldSetInput,
   FieldSetTextArea,
+  FieldSetTextAreaCN,
   FilterToggle,
   FlexFieldRow,
   FlexFieldRowWrap,
@@ -2021,7 +2024,6 @@ LucidButton.displayName = "LucidButton";
   ShadFieldSetInput,
   ShadFieldSetInputGray,
   ShadFieldSetMatrixInput,
-  ShadFieldSetTextArea,
   ShadFieldSetToggle,
   ShadFlexField,
   ShadFlexFieldRow2,

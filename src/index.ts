@@ -45,7 +45,7 @@ export {
     ShadFieldSetDropdown,
     ShadFieldSetInputGray,
     ShadFieldSetMatrixInput,
-    ShadFieldSetTextArea,
+    FieldSetTextAreaCN,
     ShadFieldSetToggle,
     ShadFlexField,
     ShadFlexFieldRow2,
