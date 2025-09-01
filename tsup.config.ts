@@ -7,12 +7,8 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  minify: false,
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", "react-hook-form"],
   esbuildPlugins: [
-    sassPlugin({
-      type: "css", // compile SCSS to CSS
-      modules: true // enables .module.scss support
-    }),
+    sassPlugin(),
   ],
 });
