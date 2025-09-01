@@ -1,0 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
+
+import React from "react";
+import styles from "./index.module.scss";
+
+const ButtonContainerNoWrap = (
+  props: React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  >
+) => {
+  const { children, ...rest } = props;
+
+  return (
+    <div className={styles.buttonContainer} {...rest}>
+      {children}
+    </div>
+  );
+};
+
+export default ButtonContainerNoWrap;

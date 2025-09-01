@@ -1,11 +1,18 @@
 import { defineConfig } from "tsup";
+import { sassPlugin } from "esbuild-sass-plugin";
 
 export default defineConfig({
-  entry: ["src/index.tsx"], // entry point
-  format: ["cjs", "esm"],   // CommonJS + ESModules
-  dts: true,                // generate .d.ts files
+  entry: ["src/index.ts"],
+  format: ["cjs", "esm"],
+  dts: true,
   sourcemap: true,
-  clean: true,              // clean dist before build
-  minify: false,            // keep output readable
-  external: ["react", "react-dom"] // don’t bundle React
+  clean: true,
+  minify: false,
+  external: ["react", "react-dom"],
+  esbuildPlugins: [
+    sassPlugin({
+      type: "css", // compile SCSS to CSS
+      modules: true // enables .module.scss support
+    }),
+  ],
 });
