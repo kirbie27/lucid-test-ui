@@ -1,6 +1,6 @@
-// tsup.config.ts
 import { defineConfig } from "tsup";
 import { sassPlugin } from "esbuild-sass-plugin";
+import cssModulesPlugin from "esbuild-css-modules-plugin";
 
 export default defineConfig({
   entry: ["src/index.ts"],
@@ -9,12 +9,7 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   esbuildPlugins: [
-    sassPlugin({
-      type: "css", // emit plain CSS files
-    }),
+    sassPlugin(),
+    cssModulesPlugin()
   ],
-  loader: {
-    ".png": "file",
-    ".svg": "file",
-  },
 });

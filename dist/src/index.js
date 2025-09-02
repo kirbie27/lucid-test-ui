@@ -28,8 +28,8 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
-var index_exports = {};
-__export(index_exports, {
+var src_exports = {};
+__export(src_exports, {
   Button: () => Button_default,
   ButtonContainer: () => ButtonContainer_default,
   ButtonContainerNoWrap: () => ButtonContainerNoWrap_default,
@@ -79,7 +79,7 @@ __export(index_exports, {
   StepsMaker: () => StepsMaker_default,
   YellowButton: () => YellowButton_default
 });
-module.exports = __toCommonJS(index_exports);
+module.exports = __toCommonJS(src_exports);
 
 // src/components/common/Button/index.module.scss
 var index_module_default = {};
