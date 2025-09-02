@@ -35,6 +35,11 @@ declare const LoadingOverlay: React__default.ForwardRefExoticComponent<Omit<any,
 
 declare const HollowButton: (props: ButtonProps$1) => react_jsx_runtime.JSX.Element;
 
+interface YellowButtonProps extends React__default.ButtonHTMLAttributes<HTMLButtonElement> {
+    text: string;
+}
+declare const YellowButton: (props: YellowButtonProps) => react_jsx_runtime.JSX.Element;
+
 declare const FieldFlexRow: (props: React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => react_jsx_runtime.JSX.Element;
 
 interface ImageContainerProps extends React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -271,4 +276,4 @@ interface LucidButtonProps extends React$1.ComponentProps<typeof Button> {
 }
 declare const LucidButton: React$1.ForwardRefExoticComponent<Omit<LucidButtonProps, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 
-export { Button$1 as Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker };
+export { Button$1 as Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker, YellowButton };

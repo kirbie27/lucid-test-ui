@@ -5,6 +5,7 @@ export { default as Footer } from "./Footer";
 export { default as FieldSetInput } from "./FieldSetInput";
 export { default as LoadingOverlay } from "./LoadingOverlay";
 export { default as HollowButton } from "./HollowButton";
+export { default as YellowButton } from "./YellowButton";
 export { default as FlexFieldRow } from "./FlexFieldRow";
 export { default as ImageContainer } from "./ImageContainer";
 export { default as FlexRow } from "./FlexRow";

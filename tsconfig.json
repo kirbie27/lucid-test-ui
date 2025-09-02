@@ -6,6 +6,7 @@
     "jsx": "react-jsx",
     "declaration": true,
     "declarationMap": true,
+    "emitDeclarationOnly": false,
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "Node",
