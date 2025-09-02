@@ -1898,7 +1898,8 @@ var LucidButton = React19.forwardRef(
         variant: "ghost",
         className: cn(
           "bg-pink-100 text-pink-700 hover:bg-pink-200 hover:text-pink-900 font-bold rounded-xl",
-          className
+          className,
+          index_module_default32.fieldset
         ),
         ...props,
         children: [
