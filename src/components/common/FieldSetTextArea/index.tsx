@@ -1,9 +1,9 @@
-import React, { TextareaHTMLAttributes } from "react"
-import styles from "./index.module.scss"
+import React, { TextareaHTMLAttributes } from "react";
+import styles from "./index.module.scss";
 
 export interface FieldSetTextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  placeholder: string
+  placeholder: string;
 }
 
 // eslint-disable-next-line react/display-name
@@ -18,7 +18,7 @@ const FieldSetTextArea = React.forwardRef<
         <textarea {...props} ref={ref} />
       </fieldset>
     </>
-  )
-})
+  );
+});
 
-export default FieldSetTextArea
+export default FieldSetTextArea;
