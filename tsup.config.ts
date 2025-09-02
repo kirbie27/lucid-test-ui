@@ -3,14 +3,16 @@ import { sassPlugin } from "esbuild-sass-plugin";
 import cssModulesPlugin from "esbuild-css-modules-plugin";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: {
+    index: "src/index.ts", // forces dist/index.js instead of dist/src/index.js
+  },
   outDir: "dist",
   format: ["cjs", "esm"],
   dts: true,
   sourcemap: true,
   clean: true,
   esbuildPlugins: [
-    sassPlugin(),        // ✅ handles .scss (global styles)
-    cssModulesPlugin()   // ✅ handles .module.scss (scoped styles)
+    sassPlugin(),
+    cssModulesPlugin(),
   ],
 });
