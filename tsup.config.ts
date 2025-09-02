@@ -3,18 +3,23 @@ import { sassPlugin } from "esbuild-sass-plugin";
 import cssModulesPlugin from "esbuild-css-modules-plugin";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: {
+    index: "src/index.ts", // 👈 this ensures dist/index.js instead of dist/src/index.js
+  },
+  outDir: "dist",
   format: ["cjs", "esm"],
   dts: true,
   sourcemap: true,
   clean: true,
   esbuildPlugins: [
+    // handles plain SCSS (globals)
     sassPlugin({
-      type: "css", // forces output of css file
+      type: "css", // outputs CSS files
     }),
-    cssModulesPlugin(), // ensures .module.scss gets transformed to classnames
+    // handles CSS Modules
+    cssModulesPlugin(),
   ],
   loader: {
-    ".scss": "css",
+    ".scss": "css", // for any plain SCSS imports
   },
 });
