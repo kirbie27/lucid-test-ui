@@ -13,9 +13,7 @@ export default defineConfig({
   clean: true,
   esbuildPlugins: [
     // handles plain SCSS (globals)
-    sassPlugin({
-      type: "css", // outputs CSS files
-    }),
+    sassPlugin(),
     // handles CSS Modules
     cssModulesPlugin(),
   ],
