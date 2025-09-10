@@ -8,7 +8,6 @@ interface ButtonProps$1 extends React__default.ButtonHTMLAttributes<HTMLButtonEl
     text?: string;
     shrink?: boolean;
 }
-declare const Button$1: (props: ButtonProps$1) => react_jsx_runtime.JSX.Element;
 
 declare const ButtonContainer: (props: React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => react_jsx_runtime.JSX.Element;
 
@@ -264,8 +263,8 @@ declare const FieldFlexRow2: (props: React__default.DetailedHTMLProps<React__def
 declare const MatrixFlexiRowLeftAlign: ({ title, children, ...rest }: React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => react_jsx_runtime.JSX.Element;
 
 declare const buttonVariants: (props?: ({
-    variant?: "link" | "outline" | "green" | "yellow" | "default" | "destructive" | "ghost" | null | undefined;
-    size?: "default" | "icon" | "sm" | "sm_noPadding" | "lg" | null | undefined;
+    variant?: "default" | "yellow" | "destructive" | "outline" | "ghost" | "link" | "green" | null | undefined;
+    size?: "default" | "sm" | "sm_noPadding" | "lg" | "icon" | null | undefined;
 } & class_variance_authority_dist_types.ClassProp) | undefined) => string;
 interface ButtonProps extends React$1.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
     asChild?: boolean;
@@ -276,4 +275,4 @@ interface LucidButtonProps extends React$1.ComponentProps<typeof Button> {
 }
 declare const LucidButton: React$1.ForwardRefExoticComponent<Omit<LucidButtonProps, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 
-export { Button$1 as Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker, YellowButton };
+export { Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker, YellowButton, buttonVariants };

@@ -1,7 +1,7 @@
+import { Button } from "./components/ui/button";
 import "./index.css";
 
 export {
-    Button,
     ButtonContainer,
     Modal,
     Footer,
@@ -53,3 +53,5 @@ export {
     ShadMatrixFlexiRowLeftAlign,
     LucidButton
 } from "@/components/shad";
+
+export { Button, buttonVariants } from "@/components/ui/button"

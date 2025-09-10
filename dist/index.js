@@ -30,7 +30,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  Button: () => Button_default,
+  Button: () => Button2,
   ButtonContainer: () => ButtonContainer_default,
   ButtonContainerNoWrap: () => ButtonContainerNoWrap_default,
   ColumnContainer: () => ColumnContainer_default,
@@ -77,7 +77,8 @@ __export(index_exports, {
   SideFilterStationary: () => SideFilterStationary,
   SkeletonSpan: () => SkeletonSpan_default,
   StepsMaker: () => StepsMaker_default,
-  YellowButton: () => YellowButton_default
+  YellowButton: () => YellowButton_default,
+  buttonVariants: () => buttonVariants
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -2044,6 +2045,7 @@ var lucid_button_default = LucidButton;
   SideFilterStationary,
   SkeletonSpan,
   StepsMaker,
-  YellowButton
+  YellowButton,
+  buttonVariants
 });
 //# sourceMappingURL=index.js.map
