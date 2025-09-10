@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styles from "./index.module.scss";
+import "./index.scss";
 
 export interface YellowButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
