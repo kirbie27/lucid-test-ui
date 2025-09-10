@@ -10,7 +10,7 @@ const YellowButton = (props: YellowButtonProps) => {
   const { text, children, ...rest } = props;
 
   return (
-    <button className={styles.yellowButton} {...rest}>
+    <button className="yellowButton" {...rest}>
       {children}
       <span>{text}</span>
     </button>

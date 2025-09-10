@@ -1055,36 +1055,6 @@
   display: none;
 }
 
-/* src/components/common/YellowButton/index.module.scss */
-.yellowButton {
-  min-width: 5.5rem;
-  padding: 0.6rem;
-  font-size: 0.75rem;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  background-color: #d28c00;
-  border: none;
-  align-items: center;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-@media (max-width: 648px) {
-  .yellowButton {
-    min-width: 2rem;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.2rem;
-  }
-  .yellowButton :nth-child(2) {
-    display: none;
-  }
-}
-
 /* src/components/common/FlexFieldRow/index.module.scss */
 .container {
   display: flex;
