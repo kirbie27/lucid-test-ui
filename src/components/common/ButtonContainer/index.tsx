@@ -12,7 +12,7 @@ const ButtonContainer = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.buttonContainer} {...rest}>
+    <div className="buttonContainer" {...rest}>
       {children}
     </div>
   );

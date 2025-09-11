@@ -17,16 +17,13 @@ var NormalButton = (props) => {
 };
 var Button_default = NormalButton;
 
-// src/components/common/ButtonContainer/index.scss
-var ButtonContainer_default = {};
-
 // src/components/common/ButtonContainer/index.tsx
 import { jsx as jsx2 } from "react/jsx-runtime";
 var ButtonContainer = (props) => {
   const { children, ...rest } = props;
-  return /* @__PURE__ */ jsx2("div", { className: ButtonContainer_default.buttonContainer, ...rest, children });
+  return /* @__PURE__ */ jsx2("div", { className: "buttonContainer", ...rest, children });
 };
-var ButtonContainer_default2 = ButtonContainer;
+var ButtonContainer_default = ButtonContainer;
 
 // src/components/common/Modal/index.scss
 var Modal_default = {};
@@ -104,7 +101,7 @@ var Footer = () => {
         /* @__PURE__ */ jsx4(FaPhoneAlt, {}),
         /* @__PURE__ */ jsx4("span", { className: "dark:text-foreground", children: "+632 8571 2262" })
       ] }),
-      /* @__PURE__ */ jsxs3(ButtonContainer_default2, { style: { justifyContent: "flex-start" }, children: [
+      /* @__PURE__ */ jsxs3(ButtonContainer_default, { style: { justifyContent: "flex-start" }, children: [
         /* @__PURE__ */ jsx4("span", { className: "iconLink", children: /* @__PURE__ */ jsx4(FaFacebookF, { fill: "white" }) }),
         /* @__PURE__ */ jsx4("span", { className: "iconLink", children: /* @__PURE__ */ jsx4(FaTwitter, { fill: "white" }) }),
         /* @__PURE__ */ jsx4("span", { className: "iconLink", children: /* @__PURE__ */ jsx4(FaLinkedinIn, { fill: "white" }) })
@@ -1884,7 +1881,7 @@ export {
   ActionArea_default as ActionArea,
   ActionContainer_default as ActionContainer,
   Button,
-  ButtonContainer_default2 as ButtonContainer,
+  ButtonContainer_default as ButtonContainer,
   ButtonContainerNoWrap_default as ButtonContainerNoWrap,
   ColumnContainer_default as ColumnContainer,
   ContainerLabel_default as ContainerLabel,
@@ -1917,6 +1914,7 @@ export {
   Modal_default2 as Modal,
   ModalDivider_default2 as ModalDivider,
   ModalWithOutline_default as ModelWithOutline,
+  Button_default as NormalButton,
   RightSideDownPart,
   FieldSet_Dropdown_default as ShadFieldSetDropdown,
   FieldSet_Dropdown_ListMaker_default as ShadFieldSetDropdownListMaker,

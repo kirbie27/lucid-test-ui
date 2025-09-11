@@ -605,21 +605,6 @@
   }
 }
 
-/* src/components/common/ButtonContainer/index.scss */
-.buttonContainer {
-  box-sizing: border-box;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 560px) {
-  .buttonContainer {
-    align-self: normal !important;
-  }
-}
-
 /* src/components/common/Modal/index.scss */
 .modalBackground {
   position: fixed;

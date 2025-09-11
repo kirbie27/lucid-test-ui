@@ -40,7 +40,8 @@ export {
     FlexFieldRowWrap,
     ModelWithOutline,
     ActionArea,
-    ActionContainer
+    ActionContainer,
+    NormalButton
 } from "@/components/common";
 
 export {

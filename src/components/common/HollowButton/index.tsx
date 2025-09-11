@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button, { ButtonProps } from "../Button";
+import NormalButton, { ButtonProps } from "../Button";
 
 const HollowButton = (props: ButtonProps) => {
   return (
-    <Button
+    <NormalButton
       style={{
         backgroundColor: "transparent",
         border: "solid 2px #0c6588",

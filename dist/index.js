@@ -33,7 +33,7 @@ __export(index_exports, {
   ActionArea: () => ActionArea_default,
   ActionContainer: () => ActionContainer_default,
   Button: () => Button,
-  ButtonContainer: () => ButtonContainer_default2,
+  ButtonContainer: () => ButtonContainer_default,
   ButtonContainerNoWrap: () => ButtonContainerNoWrap_default,
   ColumnContainer: () => ColumnContainer_default,
   ContainerLabel: () => ContainerLabel_default,
@@ -66,6 +66,7 @@ __export(index_exports, {
   Modal: () => Modal_default2,
   ModalDivider: () => ModalDivider_default2,
   ModelWithOutline: () => ModalWithOutline_default,
+  NormalButton: () => Button_default,
   RightSideDownPart: () => RightSideDownPart,
   ShadFieldSetDropdown: () => FieldSet_Dropdown_default,
   ShadFieldSetDropdownListMaker: () => FieldSet_Dropdown_ListMaker_default,
@@ -105,16 +106,13 @@ var NormalButton = (props) => {
 };
 var Button_default = NormalButton;
 
-// src/components/common/ButtonContainer/index.scss
-var ButtonContainer_default = {};
-
 // src/components/common/ButtonContainer/index.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
 var ButtonContainer = (props) => {
   const { children, ...rest } = props;
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: ButtonContainer_default.buttonContainer, ...rest, children });
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "buttonContainer", ...rest, children });
 };
-var ButtonContainer_default2 = ButtonContainer;
+var ButtonContainer_default = ButtonContainer;
 
 // src/components/common/Modal/index.scss
 var Modal_default = {};
@@ -186,7 +184,7 @@ var Footer = () => {
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_fa.FaPhoneAlt, {}),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "dark:text-foreground", children: "+632 8571 2262" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(ButtonContainer_default2, { style: { justifyContent: "flex-start" }, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(ButtonContainer_default, { style: { justifyContent: "flex-start" }, children: [
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "iconLink", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_fa.FaFacebookF, { fill: "white" }) }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "iconLink", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_fa.FaTwitter, { fill: "white" }) }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { className: "iconLink", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_fa.FaLinkedinIn, { fill: "white" }) })
@@ -1996,6 +1994,7 @@ var lucid_button_default = LucidButton;
   Modal,
   ModalDivider,
   ModelWithOutline,
+  NormalButton,
   RightSideDownPart,
   ShadFieldSetDropdown,
   ShadFieldSetDropdownListMaker,
