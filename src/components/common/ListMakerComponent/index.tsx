@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import Button from "../Button";
 
 export interface ListMakerComponentProps<T>
@@ -59,9 +59,9 @@ export function ListMaker<T>(props: ListMakerComponentProps<T>) {
   // }
 
   return (
-    <div className={styles.container} {...rest}>
-      <div className={styles.header}>
-        <span className={styles.label}>{label}</span>
+    <div className="listMakerContainer" {...rest}>
+      <div className="listMakerHeader">
+        <span className="listMakerLabel">{label}</span>
         {disabled ? null : <div>{children}</div>}
       </div>
       <div className={loading ? styles.listContentLoading : styles.listContent}>

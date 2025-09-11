@@ -14,8 +14,10 @@ const LabelContentContainer = (props: LabelContentContainerProps) => {
   const { header, children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
-      {header ? <span className={styles.header}>{header}</span> : null}
+    <div className="labelContentContainer" {...rest}>
+      {header ? (
+        <span className="labelContentContainerHeader">{header}</span>
+      ) : null}
       {children}
     </div>
   );

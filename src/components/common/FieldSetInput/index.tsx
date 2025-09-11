@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import Toggle, { ToggleProps } from "./toggle";
 
 export interface FieldSetInputProps
@@ -27,7 +27,7 @@ const FieldSetInput = (props: FieldSetInputProps) => {
   return (
     <>
       <fieldset
-        className={customBG ? styles.fieldsetCustom : styles.fieldset}
+        className={customBG ? "fieldsetCuston" : "fieldset"}
         style={containerstyle}
         input-type={type || "text"}
       >

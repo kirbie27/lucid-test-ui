@@ -13,7 +13,7 @@ const InfoContainer = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
+    <div className="infoContainer" {...rest}>
       {children}
     </div>
   );

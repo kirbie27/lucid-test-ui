@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 const ColumnContainer = (
   props: React.DetailedHTMLProps<
@@ -12,7 +12,7 @@ const ColumnContainer = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
+    <div className="columnContainer" {...rest}>
       {children}
     </div>
   );

@@ -1,4 +1,4 @@
-.container {
+.listMakerContainer {
   flex: 1;
   box-sizing: border-box;
   display: flex;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.header {
+.listMakerHeader {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -21,14 +21,14 @@
   box-sizing: border-box;
   padding-bottom: 1rem;
 
-  & > div {
+  &>div {
     flex: 1;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
 
-    & > * {
+    &>* {
       flex: 1 !important;
       max-width: none !important;
       width: 100%;
@@ -41,7 +41,7 @@
   height: 100%;
 }
 
-.label {
+.listMakerHeader B {
   font-size: 1rem;
   font-weight: bold;
   color: #353535;
@@ -93,7 +93,7 @@
 
   overflow-y: auto;
 
-  & > div:hover {
+  &>div:hover {
     background-color: #dedede;
   }
 }
@@ -121,7 +121,7 @@
 .iconExpanded {
   @extend .iconToExpand;
 
-  & > * {
+  &>* {
     transform: rotate(90deg);
     transition: linear 0.2s;
   }

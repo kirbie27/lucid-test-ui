@@ -10,7 +10,7 @@ const CancelButton = (props: CancelButtonProps) => {
   const { text, children, ...rest } = props;
 
   return (
-    <button className={styles.cancelButton} {...rest}>
+    <button className="CancelButton" {...rest}>
       {children}
       <span>{text}</span>
     </button>

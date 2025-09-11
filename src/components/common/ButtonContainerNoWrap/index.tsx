@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 const ButtonContainerNoWrap = (
   props: React.DetailedHTMLProps<
@@ -12,7 +12,7 @@ const ButtonContainerNoWrap = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.buttonContainer} {...rest}>
+    <div className="buttonContainerNoWrap" {...rest}>
       {children}
     </div>
   );

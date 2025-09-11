@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export type ToggleChangedProps = {
   target: { value: boolean; name: string };
@@ -42,7 +42,7 @@ const FilterToggle = (props: ToggleProps) => {
     onChange({ target: { name, value: false } });
   }, [onChange, name]);
   return (
-    <div className={styles.toggleContainer} data-disabled={disabled}>
+    <div className="toggleContainer" data-disabled={disabled}>
       <span onClick={toggleYes}>
         <span>For Approval</span>
       </span>

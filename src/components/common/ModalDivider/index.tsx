@@ -1,6 +1,6 @@
 "use client";
 
-import styles2 from "./index.module.scss";
+import styles2 from "./index.scss";
 
 export const ModalDivider = (
   props: React.DetailedHTMLProps<
@@ -36,7 +36,7 @@ export const RightSideDownPart = (props: RightSideDownPartProps) => {
     <>
       <div>
         <label style={{ fontWeight: "bold" }}>{header}</label>
-        <div className={styles2.right}>{children}</div>
+        <div className="right">{children}</div>
       </div>
     </>
   );

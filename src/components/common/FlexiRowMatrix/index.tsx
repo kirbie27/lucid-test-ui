@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 const FlexiRowMatrix = (
   props: React.DetailedHTMLProps<
@@ -15,8 +15,8 @@ const FlexiRowMatrix = (
   return (
     <>
       <div style={{}}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.container} {...rest}>
+        <div className="title">{title}</div>
+        <div className="FlexiRowMatrix" {...rest}>
           {children}
         </div>
       </div>

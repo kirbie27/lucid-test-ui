@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { Suspense } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import ButtonContainer from "../ButtonContainer";
 import {
   FaFacebookF,
@@ -12,8 +12,8 @@ import {
 const Footer = () => {
   return (
     <Suspense fallback={<></>}>
-      <footer className={`${styles.footer} dark:bg-accent`}>
-        <div className={styles.container} style={{ flex: "2" }}>
+      <footer className={`footer dark:bg-accent`}>
+        <div className="footerContainer" style={{ flex: "2" }}>
           <span className="dark:text-foreground">ABOUT THE PROVIDER</span>
           <span className={`${styles.aboutText} dark:text-accent-foreground`}>
             LUCID IT SOLUTIONS is an IT Business Consulting Firm with a goal of
@@ -23,7 +23,7 @@ const Footer = () => {
             Learn more...
           </a>
         </div>
-        <div className={styles.container}>
+        <div className="footerContainer">
           <span className="dark:text-foreground">LINKS</span>
           <a href="#">Terms of Services</a>
           <a href="#">Privacy Policy</a>
@@ -31,34 +31,34 @@ const Footer = () => {
           <a href="#">Social Security System</a>
           <a href="#">Phil Health</a>
         </div>
-        <div className={styles.container} style={{ flex: "1.2" }}>
+        <div className="footerContainer" style={{ flex: "1.2" }}>
           <span className="dark:text-foreground">GET IN TOUCH</span>
           <span className={`dark:text-accent-foreground`}>
             For concerns or issues, contact us at
           </span>
-          <div className={styles.iconThenText}>
+          <div className="iconThenText">
             <FaEnvelope />
             <span className="dark:text-foreground">
               info@luciditsolution.com
             </span>
           </div>
-          <div className={styles.iconThenText}>
+          <div className="iconThenText">
             <FaPhoneAlt />
             <span className="dark:text-foreground">+632 8571 2262</span>
           </div>
           <ButtonContainer style={{ justifyContent: "flex-start" }}>
-            <span className={styles.iconLink}>
+            <span className="iconLink">
               <FaFacebookF fill="white" />
             </span>
-            <span className={styles.iconLink}>
+            <span className="iconLink">
               <FaTwitter fill="white" />
             </span>
-            <span className={styles.iconLink}>
+            <span className="iconLink">
               <FaLinkedinIn fill="white" />
             </span>
           </ButtonContainer>
         </div>
-        <div className={styles.address} style={{ flex: "1.3" }}>
+        <div className="address" style={{ flex: "1.3" }}>
           <span className={`dark:text-accent-foreground`}>
             © 2017 PAYplusESS. All Rights Reserved.
           </span>

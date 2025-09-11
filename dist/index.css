@@ -605,54 +605,7 @@
   }
 }
 
-/* src/components/common/Button/index.module.scss */
-.button {
-  min-width: 5.5rem;
-  padding: 0.6rem;
-  font-size: 0.75rem;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  background-color: var(--light-primary-color);
-  border: none;
-  align-items: center;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.buttonSmall {
-  min-width: 5.5rem;
-  padding: 0.6rem;
-  font-size: 0.75rem;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  background-color: var(--light-primary-color);
-  border: none;
-  align-items: center;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-@media (max-width: 648px) {
-  .buttonSmall {
-    min-width: 2rem;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.2rem;
-  }
-  .buttonSmall :nth-child(2) {
-    display: none;
-  }
-}
-
-/* src/components/common/ButtonContainer/index.module.scss */
+/* src/components/common/ButtonContainer/index.scss */
 .buttonContainer {
   box-sizing: border-box;
   display: flex;
@@ -667,7 +620,7 @@
   }
 }
 
-/* src/components/common/Modal/index.module.scss */
+/* src/components/common/Modal/index.scss */
 .modalBackground {
   position: fixed;
   width: 100%;
@@ -733,7 +686,7 @@
   gap: 15px;
 }
 
-/* src/components/common/Footer/index.module.scss */
+/* src/components/common/Footer/index.scss */
 .footer {
   width: 100%;
   padding: 3rem;
@@ -772,7 +725,7 @@
 .aboutText {
   font-weight: 500;
 }
-.container {
+.footerContainer {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -781,10 +734,10 @@
   font-size: 0.8rem;
   padding-bottom: 1rem;
 }
-.container :first-child {
+.footerContainer :first-child {
   font-weight: bold;
 }
-.container a {
+.footerContainer a {
   color: #0275AB;
   font-weight: 500;
   font-size: 0.75rem;
@@ -839,7 +792,7 @@
   color: #0E4C64;
 }
 
-/* src/components/common/FieldSetInput/index.module.scss */
+/* src/components/common/FieldSetInput/index.scss */
 .fieldset {
   border: solid thin lightgray;
   border-radius: 3px;
@@ -1034,7 +987,7 @@
   padding-left: 1px;
 }
 
-/* src/components/common/LoadingOverlay/index.module.scss */
+/* src/components/common/LoadingOverlay/index.scss */
 .background,
 .hidden,
 .shown {
@@ -1085,286 +1038,7 @@
   }
 }
 
-/* src/components/common/FlexFieldRow/index.module.scss */
-.container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.container > fieldset {
-  flex: 1 !important;
-}
-.container > * {
-  flex: 1 !important;
-}
-@media (max-width: 560px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-/* src/components/common/ImageContainer/index.module.scss */
-.imageContainer,
-.skeleton {
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: lightgray;
-  display: flex;
-  min-height: 14rem;
-  min-width: 14rem;
-  height: 14rem;
-  width: 14rem;
-  padding: 1px;
-}
-.imageContainer > img,
-.skeleton > img {
-  border-radius: 5px;
-  object-fit: cover;
-  image-rendering: optimizeSpeed;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: pixelated;
-  image-rendering: optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
-}
-.skeleton {
-  overflow: hidden;
-  position: relative;
-  overflow: hidden;
-  background-color: #DDDBDD;
-  border-radius: 5px;
-}
-.skeleton::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0.2) 20%,
-      rgba(255, 255, 255, 0.5) 60%,
-      rgba(255, 255, 255, 0));
-  animation: shimmer 2s infinite;
-  content: "";
-}
-@keyframes shimmer {
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-/* src/components/common/FlexRow/index.module.scss */
-.container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-/* src/components/common/InfoContainer/index.module.scss */
-.container {
-  padding: 1rem 2rem 1rem 3rem;
-  flex: 1;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.container > :nth-child(2) {
-  padding-left: 1rem;
-}
-@media (max-width: 840px) {
-  .container {
-    padding: 1rem;
-  }
-  .container > :nth-child(2) {
-    padding-left: 0;
-  }
-}
-
-/* src/components/common/ColumnContainer/index.module.scss */
-.container {
-  flex: 1;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* src/components/common/ContainerLabel/index.module.scss */
-.container {
-  border-radius: 5px;
-  cursor: pointer;
-  color: #052A38;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding-left: 5px;
-}
-.container * {
-  font-size: 1.2rem !important;
-}
-.container .imageContainer {
-  display: flex;
-  text-align: center !important;
-  justify-content: center;
-  align-items: center;
-}
-.container img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-/* src/components/common/FieldSetTextArea/index.module.scss */
-.fieldset {
-  border: solid thin lightgray;
-  border-radius: 3px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.fieldset > legend {
-  font-size: 0.75rem;
-  margin: 0 10px;
-  padding: 0;
-  background-color: transparent;
-}
-.fieldset > textarea {
-  border: none;
-  outline: none;
-  width: calc(100% - 20px);
-  padding: 5px 10px 7.5px 10px;
-  font-size: 1rem;
-  resize: none;
-  background-color: transparent;
-}
-.fieldset > textarea::placeholder {
-  color: transparent;
-}
-.fieldset > textarea:disabled {
-  background-color: transparent;
-}
-.fieldset > textarea:disabled::-webkit-input-placeholder {
-  color: white;
-}
-.fieldset:has(textarea:disabled) {
-  background-color: transparent;
-  border: none;
-}
-.fieldset:has(textarea:disabled) legend::after {
-  content: ":";
-  padding-left: 1px;
-}
-
-/* src/components/common/LabelContentComponent/index.module.scss */
-.LabelContentContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  color: #353535;
-}
-.label {
-  font-size: 0.75rem;
-}
-.content {
-  font-size: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  box-sizing: border-box;
-}
-.content:has(:nth-child(2)) {
-  align-items: center !important;
-}
-.content > span {
-  min-height: 1rem;
-  height: fit-content;
-  font-weight: 600;
-  padding-top: 5px;
-  word-wrap: break-word;
-  word-break: break-all;
-  padding-bottom: 5px;
-}
-@media (max-width: 560px) {
-  .content > span {
-    font-size: 0.8rem !important;
-  }
-}
-.skeleton {
-  overflow: hidden;
-  background-color: gray;
-  position: relative;
-  overflow: hidden;
-  background-color: #dddbdd;
-  border-radius: 3px;
-  margin-left: -2px;
-}
-.skeleton::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0.2) 20%,
-      rgba(255, 255, 255, 0.5) 60%,
-      rgba(255, 255, 255, 0));
-  animation: shimmer 2s infinite;
-  content: "";
-}
-@keyframes shimmer {
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-/* src/components/common/LabelContentContainer/index.module.scss */
-.container {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 5px 1rem;
-  gap: 1rem;
-  min-width: 9rem;
-  height: fit-content;
-  border-left: solid thin lightgray;
-}
-.header {
-  font-weight: 600;
-  color: var(--light-primary-color);
-}
-
-/* src/components/common/LabelContentContainerNoPadding/index.module.scss */
-.container {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding-block: 5px;
-  gap: 1rem;
-  min-width: 9rem;
-  height: fit-content;
-}
-.header {
-  font-weight: 600;
-  color: var(--light-primary-color);
-}
-
-/* src/components/common/SkeletonSpan/index.module.scss */
+/* src/components/common/SkeletonSpan/index.scss */
 .skeleton {
   overflow: hidden;
   position: relative;
@@ -1394,15 +1068,6 @@
   100% {
     transform: translateX(100%);
   }
-}
-
-/* src/components/common/ContentGrid/index.module.scss */
-.grid {
-  display: grid;
-  flex: 2;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 15rem));
-  row-gap: 1rem;
-  column-gap: 1rem;
 }
 
 /* src/components/common/MatrixInput/index.scss */
@@ -1495,47 +1160,7 @@
   border-color: var(--group-border-focus);
 }
 
-/* src/components/common/FlexiRowMatrix/index.module.scss */
-.title {
-  display: flex;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  position: relative;
-  top: -0.5rem;
-}
-@media (max-width: 480px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-/* src/components/common/FlexiRowMatrixLeftAlign/index.module.scss */
-.title {
-  display: flex;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-.container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-  margin-inline: 10px;
-  align-items: baseline;
-  position: relative;
-}
-@media (max-width: 480px) {
-  .container {
-    flex-direction: column;
-    gap: 10px;
-    width: 50%;
-    min-width: 150px;
-  }
-}
-
-/* src/components/common/ModalDivider/index.module.scss */
+/* src/components/common/ModalDivider/index.scss */
 .Divider {
   display: flex;
   flex-direction: row;
@@ -1587,7 +1212,7 @@
   }
 }
 
-/* src/components/common/SideFilterStationary/index.module.scss */
+/* src/components/common/SideFilterStationary/index.scss */
 .sideFilter,
 .sideFilterHidden {
   display: flex;
@@ -1715,7 +1340,7 @@
   margin-top: 0.5rem;
 }
 
-/* src/components/common/FilterToggle/index.module.scss */
+/* src/components/common/FilterToggle/index.scss */
 .toggleContainer {
   display: flex;
   border-radius: 3px;
@@ -1879,38 +1504,8 @@
   color: #1b4b58;
 }
 
-/* src/components/common/FormFormatter/FormSection/index.module.scss */
-.section {
-  flex: 1;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  padding-bottom: 0;
-  margin-top: 0;
-  gap: 1rem;
-  animation: appear 0.3s ease-in-out 0s 1 forwards;
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* src/components/common/ButtonContainerNoWrap/index.module.scss */
-.buttonContainer {
-  box-sizing: border-box;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
-/* src/components/common/ListMakerComponent/index.module.scss */
-.container {
+/* src/components/common/ListMakerComponent/index.scss */
+.listMakerContainer {
   flex: 1;
   box-sizing: border-box;
   display: flex;
@@ -1921,7 +1516,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.header {
+.listMakerHeader {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -1932,14 +1527,14 @@
   box-sizing: border-box;
   padding-bottom: 1rem;
 }
-.header > div {
+.listMakerHeader > div {
   flex: 1;
 }
 @media (max-width: 768px) {
-  .header {
+  .listMakerHeader {
     flex-direction: column;
   }
-  .header > * {
+  .listMakerHeader > * {
     flex: 1 !important;
     max-width: none !important;
     width: 100%;
@@ -1949,7 +1544,7 @@
   flex: 1.5;
   height: 100%;
 }
-.label {
+.listMakerHeader B {
   font-size: 1rem;
   font-weight: bold;
   color: #353535;
@@ -2037,7 +1632,7 @@
   animation: extend 0.1s ease-in-out 0s 1 forwards;
 }
 
-/* src/components/common/StepsMaker/index.module.scss */
+/* src/components/common/StepsMaker/index.scss */
 .stepsRow {
   display: flex;
   flex-direction: row;
@@ -2172,87 +1767,6 @@
   .stepsRow {
     justify-content: start !important;
   }
-}
-
-/* src/components/common/FlexFieldRowWrap/index.module.scss */
-.container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.container > fieldset {
-  flex: 1 !important;
-}
-.container > * {
-  flex: 1 !important;
-}
-
-/* src/components/common/ModalWithOutline/index.module.scss */
-.modalBackground {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(102, 102, 102, 0.4);
-  top: 0;
-  left: 0;
-  overflow: auto !important;
-  display: grid;
-  place-items: center;
-  z-index: 100;
-  animation: show 500ms linear 0s 1 forwards;
-}
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.modalContainer {
-  box-sizing: border-box;
-  border: 0px solid #353535;
-  border-radius: 5px;
-  top: 0;
-  max-width: var(--max-screen-width);
-}
-.modalContainer[modal-size=small] {
-  width: min(95%, 20rem);
-}
-.modalContainer[modal-size=medium] {
-  width: min(95%, 30rem);
-}
-.modalContainer[modal-size=medium2] {
-  width: min(95%, 40rem);
-}
-.modalContainer[modal-size=large] {
-  width: 75%;
-}
-.modalContainer[modal-size=xlarge] {
-  width: min(95%, 100% - 6rem);
-}
-.modalHeaderContainer {
-  padding: 1rem;
-  padding-inline: 1.5rem;
-}
-.modalHeader {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  border-top: solid thin gray;
-}
-.contentContainer > :nth-child(1) {
-  flex: 2;
-  min-height: 4rem;
-}
-.footerContainer {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 15px;
 }
 
 /* src/components/shad/FieldSetInput/index.module.scss */

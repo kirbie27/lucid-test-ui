@@ -34,4 +34,6 @@ export { default as ButtonContainerNoWrap } from "./ButtonContainerNoWrap";
 export { default as ListMakerComponent } from "./ListMakerComponent";
 export { default as StepsMaker } from "./StepsMaker";
 export { default as FlexFieldRowWrap } from "./FlexFieldRowWrap";
-export { default as ModalWithOutline } from "./ModalWithOutline";
+export { default as ActionArea } from "./ActionContainer/ActionArea"
+export { default as ActionContainer } from "./ActionContainer/index"
+export { default as ModelWithOutline } from "./ModalWithOutline"

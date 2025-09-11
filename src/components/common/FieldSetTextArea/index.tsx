@@ -1,5 +1,5 @@
 import React, { TextareaHTMLAttributes } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export interface FieldSetTextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -13,7 +13,7 @@ const FieldSetTextArea = React.forwardRef<
 >((props: FieldSetTextAreaProps, ref) => {
   return (
     <>
-      <fieldset className={styles.fieldset}>
+      <fieldset className="fieldsetTextArea">
         <legend>{props.placeholder}</legend>
         <textarea {...props} ref={ref} />
       </fieldset>

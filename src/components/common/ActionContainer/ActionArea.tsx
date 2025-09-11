@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import { HTMLAttributes } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import React from "react";
 
 export interface ActionAreaProps extends HTMLAttributes<HTMLDivElement> {
@@ -11,7 +11,7 @@ const ActionArea = React.forwardRef<HTMLDivElement, ActionAreaProps>(
   (props: ActionAreaProps, ref) => {
     const { children, ...rest } = props;
     return (
-      <div className={styles.actionContainer} {...rest} ref={ref}>
+      <div className="actionContainer" {...rest} ref={ref}>
         {children}
       </div>
     );

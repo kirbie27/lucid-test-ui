@@ -1,4 +1,4 @@
-.container {
+.flexFieldRow {
   display: flex;
   justify-content: flex-start;
 
@@ -13,5 +13,7 @@
     flex: 1 !important;
   }
 
-
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
 }

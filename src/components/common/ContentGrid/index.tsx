@@ -13,7 +13,7 @@ const ContentGrid = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.grid} {...rest}>
+    <div className="contentGrid" {...rest}>
       {children}
     </div>
   );

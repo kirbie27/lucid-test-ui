@@ -15,8 +15,8 @@ const ContainerLabel = (props: ContainerLabelProps) => {
   const { img, text, children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
-      <div className={styles.imageContainer}>
+    <div className="containerLabel" {...rest}>
+      <div className="imageContainer">
         {img ? <img src={img} alt="LabelIcon" /> : children}
       </div>
       <span className="dark:text-muted">{text}</span>

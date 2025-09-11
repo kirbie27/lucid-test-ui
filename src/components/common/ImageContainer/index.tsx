@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export interface ImageContainerProps
   extends React.DetailedHTMLProps<
@@ -23,10 +23,10 @@ const ImageContainer = (props: ImageContainerProps) => {
   } = props;
 
   if (loading) {
-    return <div className={styles.skeleton} {...rest}></div>;
+    return <div className="skeleton" {...rest}></div>;
   } else {
     return (
-      <div className={styles.imageContainer} {...rest}>
+      <div className="imageContainer" {...rest}>
         {src ? (
           <img
             src={src}

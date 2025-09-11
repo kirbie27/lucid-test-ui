@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export interface LabelContentContainerProps
   extends React.DetailedHTMLProps<
@@ -14,8 +14,10 @@ const LabelContentContainerNoPadding = (props: LabelContentContainerProps) => {
   const { header, children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
-      {header ? <span className={styles.header}>{header}</span> : null}
+    <div className="labelContentContainerPadding" {...rest}>
+      {header ? (
+        <span className="labelContentContainerHeader">{header}</span>
+      ) : null}
       {children}
     </div>
   );

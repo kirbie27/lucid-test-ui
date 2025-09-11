@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 const FieldFlexRow = (
   props: React.DetailedHTMLProps<
@@ -13,7 +13,7 @@ const FieldFlexRow = (
   const { children, ...rest } = props;
 
   return (
-    <div className={styles.container} {...rest}>
+    <div className="flexFieldRow" {...rest}>
       {children}
     </div>
   );

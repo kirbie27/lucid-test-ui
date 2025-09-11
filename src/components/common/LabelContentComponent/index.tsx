@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import { skeletonSizes } from "@/values";
 
 export interface LabelContentComponent
@@ -28,18 +28,18 @@ const LabelContentComponent = (props: LabelContentComponent) => {
   } = props;
 
   return (
-    <div className={styles.LabelContentContainer} {...rest}>
-      <span className={`${styles.label} dark:text-accent-foreground`}>
-        {label}
-      </span>
-      <div className={styles.content}>
+    <div className="labelContentContainer" {...rest}>
+      <span className={`label dark:text-accent-foreground`}>{label}</span>
+      <div className="content">
         {loading ? (
-          <span className={styles.skeleton} style={{ width: `${size}` }}>
+          <span className="skeleton" style={{ width: `${size}` }}>
             {content}
           </span>
         ) : (
           <span
-            className={`${highlight ? "text-orange" : "dark:text-white"} ${content === "--no change--" ? "italic" : ""}`}
+            className={`${highlight ? "text-orange" : "dark:text-white"} ${
+              content === "--no change--" ? "italic" : ""
+            }`}
           >
             {content == "" ? "No Information" : content}
           </span>

@@ -3,7 +3,7 @@
 
 import React from "react";
 import { ColumnContainer } from "@/components/common";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export interface FormSectionProps
   extends React.DetailedHTMLProps<
@@ -19,7 +19,7 @@ const FormSection = (props: FormSectionProps) => {
 
   if (selectedSection === sectionName)
     return (
-      <ColumnContainer className={styles.section} {...rest}>
+      <ColumnContainer className="formSection" {...rest}>
         {children}
       </ColumnContainer>
     );

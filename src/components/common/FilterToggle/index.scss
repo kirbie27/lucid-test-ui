@@ -6,7 +6,7 @@
 
   margin-bottom: 1rem;
 
-  & > span {
+  &>span {
     min-width: 7rem;
     text-align: center;
     font-size: 0.75rem;
@@ -33,12 +33,12 @@
     z-index: 1;
     z-index: unset;
 
-    & > span {
+    &>span {
       position: relative;
     }
   }
 
-  &:has(.marker[data-toggled="true"]) > span:first-child {
+  &:has(.marker[data-toggled="true"])>span:first-child {
     z-index: 3;
     z-index: unset;
     border-color: var(--primary-color);
@@ -46,7 +46,7 @@
     transition: border-color 0s 500ms, z-index 0s 500ms, color 500ms 0s;
   }
 
-  &:has(.marker[data-toggled="false"]) > span:nth-child(2) {
+  &:has(.marker[data-toggled="false"])>span:nth-child(2) {
     z-index: 3;
     z-index: unset;
     border-color: var(--primary-color);
@@ -55,7 +55,7 @@
   }
 
   &[data-disabled="true"] {
-    & > * {
+    &>* {
       display: none;
     }
 

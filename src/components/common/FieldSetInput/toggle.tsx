@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export type ToggleChangedProps = {
   target: { value: boolean; name: string };
@@ -46,18 +46,18 @@ const Toggle = (props: ToggleProps) => {
     onChange({ target: { name, value: false } });
   }, [onChange, name]);
   return (
-    <div className={styles.toggleContainer} data-disabled={disabled}>
+    <div className="toggleContainer" data-disabled={disabled}>
       <span onClick={toggleYes}>
         <span>{checkedValue}</span>
       </span>
       <span onClick={toggleNo}>
         <span>{notCheckedValue}</span>
       </span>
-      <div className={styles.marker} ref={markerRef}>
+      <div className="marker" ref={markerRef}>
         <span>{checked ? checkedValue : notCheckedValue}</span>
       </div>
       {disabled ? (
-        <div className={styles.disabledLabel}>
+        <div className="disabledLevel">
           {checked ? checkedValue : notCheckedValue}
         </div>
       ) : null}

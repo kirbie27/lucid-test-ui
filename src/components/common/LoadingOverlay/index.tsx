@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useCallback, useRef } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import { motion } from "framer-motion";
 //import ReactLoading from "react-loading";
 

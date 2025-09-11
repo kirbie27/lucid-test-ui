@@ -1,6 +1,6 @@
 "use client";
 import { HTMLAttributes } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 import { cn } from "@/lib/utils";
 
 export type ModalSize = "small" | "medium" | "medium2" | "large" | "xlarge";
@@ -23,9 +23,9 @@ const Modal = ({
   return (
     <>
       {show ? (
-        <div className={cn(styles.modalBackground, "h-full")} role="modal-bg">
+        <div className={cn("modalBackground", "h-full")} role="modal-bg">
           <div
-            className={cn(styles.modalContainer, "bg-background")}
+            className={cn("modalBackground", "bg-background")}
             {...rest}
             //open={show}
             {...modalSize}

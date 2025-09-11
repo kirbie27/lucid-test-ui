@@ -65,6 +65,14 @@ interface FieldSetTextAreaProps$1 extends TextareaHTMLAttributes<HTMLTextAreaEle
 }
 declare const FieldSetTextArea: React__default.ForwardRefExoticComponent<FieldSetTextAreaProps$1 & React__default.RefAttributes<HTMLTextAreaElement>>;
 
+declare const colors: {
+    primary: string;
+    primary_filter: string;
+    black: string;
+    red: string;
+    gray: string;
+};
+
 declare const enum skeletonSizes {
     small = "10rem",
     medium = "12rem",
@@ -167,6 +175,16 @@ interface StepsMakerProps extends React__default.DetailedHTMLProps<React__defaul
 declare const StepsMaker: (props: StepsMakerProps) => react_jsx_runtime.JSX.Element;
 
 declare const FieldFlexRowWrap: (props: React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => react_jsx_runtime.JSX.Element;
+
+interface ActionAreaProps extends HTMLAttributes<HTMLDivElement> {
+    children?: React__default.ReactNode;
+}
+declare const ActionArea: React__default.ForwardRefExoticComponent<ActionAreaProps & React__default.RefAttributes<HTMLDivElement>>;
+
+interface ActionContainerProps extends HTMLAttributes<HTMLDivElement> {
+    children?: React.ReactNode;
+}
+declare const ActionContainer: (props: ActionContainerProps) => react_jsx_runtime.JSX.Element;
 
 type ModalSize = "small" | "medium" | "medium2" | "large" | "xlarge";
 interface ModalProps extends HTMLAttributes<HTMLDialogElement> {
@@ -275,4 +293,4 @@ interface LucidButtonProps extends React$1.ComponentProps<typeof Button> {
 }
 declare const LucidButton: React$1.ForwardRefExoticComponent<Omit<LucidButtonProps, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 
-export { Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker, YellowButton, buttonVariants };
+export { ActionArea, ActionContainer, Button, ButtonContainer, ButtonContainerNoWrap, ColumnContainer, ContainerLabel, ContentGrid, Divider, FieldSetInput, FieldSetTextArea, FieldSetTextAreaCN, FilterToggle, FieldFlexRow as FlexFieldRow, FieldFlexRowWrap as FlexFieldRowWrap, FlexRow, FlexiRowMatrix, FlexiRowMatrixLeftAlign, Footer, FormContentGrid, FormContentNav, FormSection, HollowButton, ImageContainer, InfoContainer, LabelContentComponent, LabelContentContainer, LabelContentContainerNoPadding, LeftSideUpPart, ListMaker as ListMakerComponent, LoadingOverlay, LucidButton, MatrixInput, Modal, ModalDivider, ModalWithOutline as ModelWithOutline, RightSideDownPart, FieldSetDropdown as ShadFieldSetDropdown, FieldSetDropdownForList as ShadFieldSetDropdownListMaker, FieldSetInputCN$1 as ShadFieldSetInput, FieldSetInputCN as ShadFieldSetInputGray, FieldSetMatrix as ShadFieldSetMatrixInput, Toggle as ShadFieldSetToggle, FlexField as ShadFlexField, FieldFlexRow2 as ShadFlexFieldRow2, MatrixFlexiRowLeftAlign as ShadMatrixFlexiRowLeftAlign, SideFilterStationary, SkeletonSpan, StepsMaker, YellowButton, buttonVariants, colors, skeletonSizes };

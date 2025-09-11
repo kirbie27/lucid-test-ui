@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react";
-import styles from "./index.module.scss";
+import styles from "./index.scss";
 
 export interface ActionContainerProps extends HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
@@ -8,7 +8,7 @@ export interface ActionContainerProps extends HTMLAttributes<HTMLDivElement> {
 const ActionContainer = (props: ActionContainerProps) => {
   const { children, ...rest } = props;
   return (
-    <div className={styles.buttonContainer} {...rest}>
+    <div className="actionButtonContainer" {...rest}>
       {children}
     </div>
   );

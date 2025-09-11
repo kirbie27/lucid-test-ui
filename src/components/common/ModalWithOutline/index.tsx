@@ -23,21 +23,21 @@ const ModalWithOutline = ({
   return (
     <>
       {show ? (
-        <div className={cn(styles.modalBackground, "h-full")} role="modal-bg">
+        <div className={cn("modalBackground", "h-full")} role="modal-bg">
           <div
-            className={cn(styles.modalContainer, "bg-background")}
+            className={cn("modalContainer", "bg-background")}
             {...rest}
             //open={show}
             {...modalSize}
           >
             {/* Header Container */}
-            <div className={styles.modalHeaderContainer}>
-              <span className={cn(styles.modalHeader, "text-foreground")}>
+            <div className="modalHeaderContainer">
+              <span className={cn("modalHeader", "text-foreground")}>
                 {header}
               </span>
             </div>
             {/* Content */}
-            <div className={styles.contentContainer}>{children}</div>
+            <div className={"contentContainer"}>{children}</div>
             {/* Footer Cntainer */}
           </div>
         </div>
