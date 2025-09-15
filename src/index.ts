@@ -58,7 +58,7 @@ export {
     LucidButton
 } from "@/components/shad";
 
-export { Button, buttonVariants } from "@/components/ui/button"
+export * from "@/components/ui"
 
 export { skeletonSizes } from "@/values";
 export { colors } from "@/values";
